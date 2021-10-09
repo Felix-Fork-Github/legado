@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     //**************************************************************Theme******************************************************************************//
-
+    <!-- 阅读主题 -->
+    <style name="ReadingBookTheme" parent="AppTheme.Light">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
     <!-- 亮色主题 -->
     <style name="AppTheme.Light" parent="Base.AppTheme">
         <item name="actionBarStyle">@style/AppTheme.AppBarOverlay.Light</item>
@@ -48,7 +51,7 @@
         <item name="colorAccent">@color/md_grey_900</item>
     </style>
 
-    <style name="AppTheme.AlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert"/>
+    <style name="AppTheme.AlertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert" />
 
     <style name="Spinner" parent="android:Theme.Holo.Light" />
 
