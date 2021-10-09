@@ -2,6 +2,7 @@ package io.legado.app.ui.book.info
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -193,6 +194,7 @@ class BookInfoActivity :
         tvAuthor.text = getString(R.string.author_show, book.getRealAuthor())
         tvOrigin.text = getString(R.string.origin_show, book.originName)
         tvLasted.text = getString(R.string.lasted_show, book.latestChapterTitle)
+        tvPath?.text = getString(R.string.book_path, Uri.parse(book.bookUrl).path)
         tvIntro.text = book.getDisplayIntro()
         upTvBookshelf()
         val kinds = book.getKindList()
